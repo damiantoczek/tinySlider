@@ -2,6 +2,9 @@
 Simple image slider using VanillaJS, including full Demo.
 It preloads next image to be gentle for mobile devices.
 
+![tinySlider Preview](https://raw.githubusercontent.com/damiantoczek/tinySlider/main/tinySlider.png)
+
+
 # Setup
 ```javascript
 const slider = new Slider('div.slider', [
