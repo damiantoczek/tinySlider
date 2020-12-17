@@ -21,7 +21,7 @@ const slider = new Slider('div.slider', [
   ]);
 ```
 
-Slider must be initiated to work, it was initially made to be used with window.readyState.
+Slider must be initiated to work, it was made to be used with window.readyState.
 ```javascript
 slider.init();
 ```
