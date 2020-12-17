@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tinySlider @ damiantoczek</title>
+    <!-- Prevents CSS jump etc, very smooth -->
+    <style media="screen">
+      .preload{opacity: 0;}
+      body{transition: all ease-in .5s}
+    </style>
+    <!-- NOscript hides the controlls -->
+    <noscript>
+      <style media="screen">
+        .noscript{
+          display:none;
+        }
+      </style>
+    </noscript>
+    <!-- Scripts -->
+    <!-- Make sure you're getting the slider.js and have the /lib/ folder -->
+    <script src="../lib/slider.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body class="preload">
+    <!-- Example header -->
+    <header>
+      <a class="home" href="/">tinySlider</a>
+      <nav>
+        <a href="https://github.com/damiantoczek/tinySlider">Github</a>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome">
+        <div class="slider">
+          <div class="scroller">
+            <div class="items"></div>
+          </div>
+          <div class="controlls .noscript">
+            <div class="btn prev"><div class="icon arrow"></div></div>
+            <div class="btn next"><div class="icon arrow flip"></div></div>
+            <progress></progress>
+          </div>
+        </div>
+      </section>
+    </main>
+    <link rel="stylesheet" href="icons.css">
+  </body>
+</html>
