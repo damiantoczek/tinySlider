@@ -34,17 +34,7 @@ document.onreadystatechange = function(){
   if(domState === 'interactive'){
     // After the HTML has been parsed and body elements are available.
     slider.init();
-
-    // Setting up the controll buttons, optional, the interval/auto sliding will still work.
-    slider.root.querySelector('.controlls .next').addEventListener('click', () => {
-      slider.next()
-    });
-    slider.root.querySelector('.controlls .prev').addEventListener('click', () => {
-      slider.prev()
-    });
   }else if(domState === 'complete'){
-    document.body.classList.remove('preload');
-    // After everything has been done, start the interval.
     // This is my preference because it's more important for the content to be loaded first.
     slider.interval(2000);
   }
